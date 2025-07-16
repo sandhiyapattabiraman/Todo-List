@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+/* Custom styles for enhanced UI */
+body {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #f0fdf4 0%, #d1fae5 100%);
+}
+
+input[type="text"] {
+  font-size: 1rem;
+  background: #f9fafb;
+  border: 1.5px solid #d1fae5;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+input[type="text"]:focus {
+  border-color: #34d399;
+  box-shadow: 0 0 0 2px #bbf7d0;
+}
+
+button {
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+button.px-2 {
+  cursor: pointer;
+}
+
+/* Card container */
+.card {
+  box-shadow: 0 8px 32px 0 rgba(52, 211, 153, 0.12);
+  border-radius: 1.5rem;
+  background: #fff;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .max-w-md {
+    max-width: 98vw;
+    padding: 1rem;
+  }
+  .p-8 {
+    padding: 1.5rem !important;
+  }
+}
+
+/* Checkbox accent for better visibility */
+input[type="checkbox"].accent-green-400,
+input[type="checkbox"].accent-green-500 {
+  accent-color: #34d399;
+}
+
+/* Subtle hover for todo items */
+.group:hover {
+  box-shadow: 0 4px 16px 0 rgba(52, 211, 153, 0.10);
+}
+
+/* Hide default outline for buttons */
+button:focus {
+  outline: none;
+}
